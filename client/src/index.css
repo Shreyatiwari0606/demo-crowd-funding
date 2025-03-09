@@ -1,122 +1,235 @@
+/* Global Styles */
 body {
   font-family: 'Rubik', sans-serif;
+  background-color: #f8f9fa; /* Light Gray */
+  color: #2d3748; /* Dark Gray */
+  line-height: 1.6;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Rubik Mono One', sans-serif;
+  color: #4a5568; /* Dark Blue-Gray */
+  margin-bottom: 1rem;
 }
 
-.small {
+/* Navbar Styling */
+.navbar {
+  background: linear-gradient(90deg, #6C5CE7, #8E44AD); /* Purple Gradient */
+  padding: 15px 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
   font-weight: bold;
-  font-style: italic;
+  color: #ffd700 !important; /* Gold */
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for emphasis */
 }
 
-.color-nav {
-  background-color: #F5E6E8;
+.navbar-toggler {
+  border: none;
+  outline: none;
 }
 
-.submitButton {
-  background-color: #271951
-}
-.submitBtn:hover {
-  background-color: #583da8;
-}
-
-.signupBtn{
-  background-color: #271951;
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff !important;
+  transition: all 0.3s ease-in-out;
+  margin: 0 10px;
 }
 
-.signupBtn:hover {
-  background-color: #583da8;
+.navbar-nav .nav-link:hover {
+  color: #ffd700 !important; /* Gold */
+  transform: scale(1.05);
 }
 
-.createBtn {
-  background-color: #271951;
-}
-.createBtn:hover {
-  background-color: #583da8;
-}
-
-.paymentBtn {
-  background-color: #271951;
-}
-
-.paymentBtn:hover {
-  background-color: #583da8;
-}
+/* Login/Signup Button in Navbar */
 .signup-button {
-  background-color: #271951;
-  color: #F5E6E8;
-  border-radius: 5px;
-  margin-left: 5px;
+  background: linear-gradient(135deg, #FF6B6B, #FFA07A); /* Coral Gradient */
+  color: white;
+  border-radius: 8px;
+  padding: 8px 15px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 0.5px;
 }
 
 .signup-button:hover {
-  background-color: #322165;
+  background: linear-gradient(135deg, #FF4757, #FF7F50); /* Darker Coral Gradient */
   color: #fff;
-  border-radius: 5px;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(255, 107, 107, 0.3);
 }
 
-.site-title {
-  font-size: x-large;
-  font-weight: 900;
-  color: #192A51;
+/* Modal Styling */
+.modal-content {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
 }
 
-
-.page-header {
-  background-color: #271951;
-  color: #F5E6E8;
-  text-align: center;
-}
-.page-header h1 {
-  color: #F5E6E8;
-}
-.nav-text {
-  color: #fff;
-  font-weight: 450;
-  font-size: larger;
+.modal-header {
+  border-bottom: none;
+  padding: 20px;
 }
 
-body {
-  background-color: #fff9fa;
-} 
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6C5CE7; /* Purple */
+}
 
+.modal-body {
+  padding: 30px;
+}
+
+/* Form Styling */
 .form {
   background-color: #fff;
-  box-shadow: 0 0 3px #ccc;
-  padding: 35px  15px 25px 15px;
-  margin-bottom: 30px;
-  margin-top: 14px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-top: 15px;
   border-radius: 10px;
 }
-.more-details {
-  background-color: #271951;
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #e2e8f0; /* Light Gray */
+  padding: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
 }
+
+.form-control:focus {
+  border-color: #6C5CE7; /* Purple */
+  box-shadow: 0 0 5px rgba(108, 92, 231, 0.5);
+}
+
+/* Submit Buttons */
+.more-details {
+  background: linear-gradient(135deg, #6C5CE7, #8E44AD); /* Purple Gradient */
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 0.5px;
+}
+
 .more-details:hover {
-  background-color: #583da8;
+  background: linear-gradient(135deg, #5B4DBE, #7D3C98); /* Darker Purple Gradient */
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(108, 92, 231, 0.3);
+}
+
+/* Fundraiser Cards */
+.fundraiser-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .fundraiser-card:hover {
-  background-color: #dbc6c8;
-  box-shadow: 0 0 3px #aaa;
+  background: linear-gradient(135deg, #FF6B6B, #FFA07A); /* Coral Gradient */
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 107, 107, 0.4);
+  transform: translateY(-5px);
 }
 
+.fundraiser-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.fundraiser-card p {
+  font-size: 1rem;
+  color: #4a5568; /* Dark Blue-Gray */
+}
+
+/* Contributions Section */
 .contributions {
-  background-color: #fff;
-  padding: 10px  15px 10px 15px;
-  margin-bottom: 30px;
-  margin-top: 14px;
+  background: #edf2f7; /* Light Blue-Gray */
+  padding: 20px;
+  margin-top: 20px;
   border-radius: 10px;
-}
-.contribution-detail {
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 15px;
-  padding-bottom: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
+.contributions h4 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+
+.contributions p {
+  font-size: 1rem;
+  color: #4a5568; /* Dark Blue-Gray */
+}
+
+/* Main Page */
+.main-section {
+  background: linear-gradient(180deg, #6C5CE7, #8E44AD); /* Purple Gradient */
+  padding: 60px 20px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.main-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.main-section p {
+  font-size: 1.25rem;
+  color: #e2e8f0; /* Light Gray */
+}
+
+/* Footer Styling */
+.footer {
+  background: linear-gradient(90deg, #6C5CE7, #8E44AD); /* Purple Gradient */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer a {
+  color: #ffd700; /* Gold */
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer a:hover {
+  color: #FF6B6B; /* Coral */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 0;
+  }
+
+  .signup-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-section h1 {
+    font-size: 2rem;
+  }
+
+  .main-section p {
+    font-size: 1rem;
+  }
+}
